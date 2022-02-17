@@ -37,6 +37,8 @@ class choose{
 
         //System.out.println(vegetarian + vegan + glutenFree);
 
+
+            // if Y Y Y 
         if(vegetarian.equals("yes"))
         {
             if(vegan.equals("yes"))
@@ -45,23 +47,26 @@ class choose{
                 {
                     System.out.println("Here are your options: \n\n Corner Cafe \n The Chef's Kitchen ");
                 }
+                    // if Y Y N
                 else if(glutenFree.equals("no")){
                     System.out.println();
                     System.out.println("Sorry, there are no resturants available");
                 }
-            }
+            } 
+                // If Y N Y
             else if(vegan.equals("no"))
             {
                 if(glutenFree.equals("yes"))
                 {
                     System.out.println("Here are your options: \n\n Main Street Pizza Compnay");
                 }
+                    // if Y N N 
                 else if (glutenFree.equals("no")){
                     System.out.println();
                     System.out.println("Here are your options: \n\n Mama's Fine Italian ");
                 }
             }
-
+                // if N Y Y 
         }else if (vegetarian.equals("no"))
         {
             if(vegan.equals("yes"))
@@ -70,11 +75,15 @@ class choose{
                 {
                         System.out.println("Super Sorry, there are no resturants available");
 
-                }else if(glutenFree.equals("no"))
+                }
+
+                    // If N Y N 
+                else if(glutenFree.equals("no"))
                 {
                     System.out.println("We apologize, It looks like your party will starve tonight!");
                 }
             }
+                // If N N Y
             else if(vegan.equals("no"))
             {
                 if(glutenFree.equals("yes"))
@@ -82,6 +91,7 @@ class choose{
                     System.out.println();
                     System.out.println("Man, just drink some water and go to sleep");
                 }
+                    // If N N N 
                 else if(glutenFree.equals("no")){
                     System.out.println();
                     System.out.println("Here are your options: \n\n Joe's Gourment Burger");

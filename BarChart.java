@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 
@@ -12,59 +13,99 @@ public class BarChart {
             each asterisk should represent $100 of sales. 
         */
 
-            Scanner scan = new Scanner(System.in);
         
-        // user inputs
-
-        System.out.println("Enter today's sales for store 1 : " );
-        Double Store1 = scan.nextDouble();
+        // Create a scanner object
+        
+        Scanner scan = new Scanner(System.in);
+        
+        // Get user inputs
+            System.out.println("Enter today's sales for store 1 : " );
+            Double Store1 = scan.nextDouble();
+            System.out.println("Enter today's sales for store 2 : " );
+            double Store2 = scan.nextDouble();
+            System.out.println("Enter today's sales for store 3 : " );
+            double Store3 = scan.nextDouble();
+            System.out.println("Enter today's sales for store 4 : " );
+            double Store4 = scan.nextDouble();
+            System.out.println("Enter today's sales for store 5 : " );
+            double Store5 = scan.nextDouble();
 
         
-        System.out.println("Enter today's sales for store 2 : " );
-        double Store2 = scan.nextDouble();
-        System.out.println("Enter today's sales for store 3 : " );
-        double Store3 = scan.nextDouble();
-        System.out.println("Enter today's sales for store 4 : " );
-        double Store4 = scan.nextDouble();
-        System.out.println("Enter today's sales for store 5 : " );
-        double Store5 = scan.nextDouble();
-        
 
-        // assigning 100 to the * 
+        // variable  for char * 
             char asteriKS = '*';
 
+            
+        // variables
+        int a;
+        int b;
+        int c;
+        int d;
+        int e; 
 
-        System.out.println("\t SALES BAR CHART");
-        /*
+        // storing the answer from dividing 100 by the user input for each store
+        a = (int) (Store1 / 100); 
+        b = (int) (Store2 / 100); 
+        c = (int) (Store3 / 100); 
+        d = (int) (Store4 / 100); 
+        e = (int) (Store5 / 100); 
 
-        String one = "Store 1: ";
-        String two = "Store 2: ";
-        String three = "Store 3: ";
-        String four = "Store 4: ";
-        String five = "Store 5: ";
-        */
-
-        repeatChar(asteriKS, Store1);
-        System.out.println();
-        repeatChar(asteriKS, Store2);
-        System.out.println();
-        repeatChar(asteriKS, Store3);
-        System.out.println();
-        repeatChar(asteriKS, Store4);
-        System.out.println();
-        repeatChar(asteriKS, Store5);
-        System.out.println();
-
-
-
+        // another variable initialization; mainly to act as a counter for the while loop 
+        int z = 0;
+        int y = 0;
+        int x = 0; 
+        int u = 0; 
+        int w = 0;
 
 
         
-        //System.out.printf("%s%n", one, repeatChar(asteriKS, Store1));
-        //System.out.printf(two, repeatChar(asteriKS, Store2));
-        //System.out.printf(three,repeatChar(asteriKS, Store3));
-        //System.out.printf(four, repeatChar(asteriKS, Store4));
-        //System.out.printf(five, repeatChar(asteriKS, Store5));
+
+        // Starting output to consle
+        System.out.println("\t SALES BAR CHART");
+    
+        // multiple while loops to get the print of askeriks for each store
+            System.out.print("Store 1: ");
+
+            while(z < a){
+                System.out.print(asteriKS);
+                
+                z++;
+            }
+        
+            System.out.println();
+            System.out.print("Store 2: "); 
+            while(y < b){
+                System.out.print(asteriKS);
+                
+                y++;
+            }
+        
+            System.out.println();
+            System.out.print("Store 3: "); 
+            while(x < c){
+                System.out.print(asteriKS);
+                
+                x++;
+            }
+        
+            System.out.println();
+            System.out.print("Store 4: "); 
+            while(u < d){
+                System.out.print(asteriKS);
+                
+                u++;
+            }
+        
+            System.out.println();
+            System.out.print("Store 5: "); 
+
+            while(w < e){
+                System.out.print(asteriKS);
+                
+                w++;
+            }
+        
+
 
 
         scan.close();
@@ -72,30 +113,33 @@ public class BarChart {
     
 
 
-public static Object[] repeatChar (char c , double s){
+ 
+
+
+
+
+/*
+my attempt to create a method so i didn't have to write everything out times 5
+and trying to use the printf; MessageFormat and also String.format to try to format the output
+
+public static String repeatChar (char c , double s){
+
+    // store the answer of s / 100 inside variable n
 
     int n = (int) (s / 100); 
     
     int i = 0;
-    /*
 
-    do{
-        System.out.print(c + " ");
-        
-        i++;
-    }
-    while(i < n);
-    System.out.println();
-
-    */
-
+    // while 1 is less than n, print the c (char), then increment i
+    // program will run for the size of n
     while(i < n){
         System.out.print(c + " ");
         
         i++;
     }
 
-return new Object[0];
+    return "";
 } 
+*/
 
 } 

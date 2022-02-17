@@ -44,10 +44,9 @@ public class UppercaseFileCoverter {
         PrintWriter inputFile = new PrintWriter(writeFile);
         inputFile.close();
 
-    // reading the contents of the read file and change it to uppercase
-    // opening the file again
-    
 
+            // reading the contents of the READ file and change it to uppercase
+            // opening the file again
         try (BufferedReader reader = new BufferedReader(new FileReader(readFile))) {
                  
 
@@ -62,11 +61,11 @@ public class UppercaseFileCoverter {
             e.printStackTrace();
         }
 
-         
+            // write  the upperCase sentence into the second file
         try {
             BufferedWriter writer2 = new BufferedWriter(new FileWriter(writeFile));
                 writer2.write(my_line); 
-                System.out.println(my_line);
+                System.out.println("check your second file");
 
                 writer2.close();
 

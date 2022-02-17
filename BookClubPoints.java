@@ -12,6 +12,7 @@ public class BookClubPoints{
         /* 
             ASSIGNMENT: Write a program that asks the user to enter the number of books that he/she has purchased this month
                         and then display the number of points awarded. 
+            Joption
         */
 
         // ask user to enter the number of books he/she has purchased this month

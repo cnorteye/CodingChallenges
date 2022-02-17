@@ -25,7 +25,6 @@ public class LetterCouter {
         outputFile.close();
 
 
-          // reading the contents of the file into an array
           // opening the file again
         File file = new File (fileName);
 
