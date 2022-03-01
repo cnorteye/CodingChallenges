@@ -21,7 +21,7 @@ public class PaintEstimator {
 
         System.out.println("How many rooms do you want painted: ");
         int rooms = keyboard.nextInt();
-        int [] userResponse = new int[rooms];  // array to store user multiple rooms
+        int [] userResponse = new int[rooms];  // array to store the user's sq measurement for each wall
         
 
                 /*
@@ -42,8 +42,8 @@ public class PaintEstimator {
                 }else{
                     // save it into an array
                     int i = 0;
-                  int count = 1;
-                  double overrallCostOfJob = 0; 
+                  int count = 1;    // holds the count for each room 
+                  double overrallCostOfJob = 0;    // holds the total amount for painting all the rooms
                     while(i < rooms) {
                         System.out.println("Enter the sqaure feet of wall space for room " + count + ":" );
                         userResponse[i] = keyboard.nextInt(); 
