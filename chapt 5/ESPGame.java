@@ -23,9 +23,6 @@ public class ESPGame{
         // Generating a random number
             Random rand = new Random();
             int num = rand.nextInt(5);
-        
-        // array to keep the colors 
-        String [] colors = {"Red", "Green", "Blue", "Orange", "Yellow"};
 
 
         // get the computer to select a color based on the randomly generated number
