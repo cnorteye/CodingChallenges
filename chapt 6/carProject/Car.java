@@ -18,17 +18,19 @@ public class Car {
     
         // Accessors: should get the values stored in an object's yearModel, make and speed fields
         
-        public String getMake(){
-            return make;
-        }
-    
-        public int getYearModel(){
-            return yearModel;
-        }
-    
-        public int getSpeed(){
-            return speed;
-        }
+                public String getMake(){
+                    return make;
+                }
+                
+
+                
+                public int getYearModel(){
+                    return yearModel;
+                }
+            
+                public int getSpeed(){
+                    return speed;
+                }
     
        
         // accelarate method, should add 5 to the speed field each time it is called

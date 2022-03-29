@@ -1,10 +1,11 @@
 package temperature;
 
+
+// tempreture class
 public class tempInFahrenheit {
     
 
     // fields
-
     private double fahrenheit; 
 
 
@@ -13,20 +14,24 @@ public class tempInFahrenheit {
         fahrenheit = ftemp;
     }
 
-    // accessors
 
-    public void setFahrenheit(double temp){
-        fahrenheit = temp; 
-    }
+    
+        // accessor: assigns the tempreature to fahrenheit
+        public void setFahrenheit(double temp){
+            fahrenheit = temp; 
+        }
 
-    public double getFahrenheit(){
-        return fahrenheit; 
-    }
+        // accessors: returns the fahrenheit
+        public double getFahrenheit(){
+            return fahrenheit; 
+        }
 
+        // method to convert the tempreture into celsius
     public double celsius(){
         return  (5/(double) 9) * (fahrenheit - 32);
     }
 
+    // method to convert the tempreture into kelvin
     public double kelvin(){
         return (((5/ (double) 9) * (fahrenheit - 32)) + 273); 
     }

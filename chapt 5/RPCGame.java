@@ -89,6 +89,8 @@ public class RPCGame {
         
     }
 
+    // method for user's choice 
+
     public static void userChoice(int num){
         
         switch(num){
@@ -105,7 +107,9 @@ public class RPCGame {
                 System.out.println("You broke the game! Choose a NEW number between 1 - 3");
         }
     }
+    
 
+    // method for computer's choice 
     public static void computerChoice(int num){
         
         switch(num){

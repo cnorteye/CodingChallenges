@@ -1,28 +1,29 @@
 package savingaccount;
 
+
+// savings account class
 public class SavingAccount {
     
 
     // fields
-
-    private double interestRate; 
-    private double balance; 
+        private double interestRate; 
+        private double balance; 
 
     //constructor accepts the amount of the savings account's starting balance
     public SavingAccount(double b){
         balance = b;
     }
 
-
+    //accessor: returning the balance
     public double getBalance(){
         return balance; 
     }
 
     // the monthly interest rate is the annual interest rate divided by 12
     public void setMonthlyInterestRate(double annualRate){
-        interestRate = annualRate/12;
+        interestRate = annualRate/12/100;
     }
-
+    
     // method to add interest rate to the balance
     public void addInterest(){
         balance += (balance * interestRate);

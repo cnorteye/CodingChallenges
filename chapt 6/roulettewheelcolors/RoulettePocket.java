@@ -1,5 +1,8 @@
 package roulettewheelcolors;
 
+
+
+// class
 public class RoulettePocket {
 
 
@@ -13,6 +16,7 @@ public class RoulettePocket {
 
     }
 
+        // method to check for pocket of 0
     public String zeroRange(){
 
         pocketInt = Integer.parseInt(pocketNumber);
@@ -26,7 +30,7 @@ public class RoulettePocket {
 
 
     //getPocketColor method, return the pocket color.
-    
+    // method to check for pocket 1 to 10 
     public String oneAndTenRange(){
 
         pocketInt = Integer.parseInt(pocketNumber);
@@ -45,15 +49,14 @@ public class RoulettePocket {
     }
 
 
+    // method to check for pocket 11 to 18
     public String elevenAndEighteenRange(){
-        
-        //      logicTest();
 
        pocketInt = Integer.parseInt(pocketNumber);
 
        if ((pocketInt >= 11) && (pocketInt <= 18)){
-           if ((pocketInt % 2 == 0) && (pocketInt > 0)){pocketColor = RED;}
-           else if ((pocketInt > 0) && (pocketInt%2!=0)){
+           if ((isEven(pocketInt)) && (pocketInt > 0)){pocketColor = RED;}
+           else if ((pocketInt > 0) && (isOdd(pocketInt))){
                pocketColor = BLACK;
            }
            else {pocketColor = GREEN;}
@@ -63,49 +66,55 @@ public class RoulettePocket {
    }
 
 
-   public String nineteenAndTwentyEightRange(){
-        
-    //      logicTest();
-
-   pocketInt = Integer.parseInt(pocketNumber);
-
-   if ((pocketInt >= 19) && (pocketInt <= 28)){
-
-       if ((pocketInt % 2 == 0) && (pocketInt > 0)){
-           pocketColor = BLACK;
-        }
-       else if ((pocketInt > 0) && (pocketInt%2!=0)){
-           pocketColor = RED;
-       }
-       else {pocketColor = GREEN;
-    }
-}
+                // method to check for pocket number 19 to 28
+            public String nineteenAndTwentyEightRange(){
+                    
 
 
-   return pocketColor;
-}
+                    pocketInt = Integer.parseInt(pocketNumber);
 
+                    if ((pocketInt >= 19) && (pocketInt <= 28)){
+
+                        if ((isEven(pocketInt)) && (pocketInt > 0)){
+                            pocketColor = BLACK;
+                            }
+                        else if ((pocketInt > 0) && (isOdd(pocketInt))){
+                            pocketColor = RED;
+                        }
+                        else {pocketColor = GREEN;
+                        }
+                    }
+
+
+                    return pocketColor;
+            }
+
+
+            // method to check for pocket number 29 to 39
 
         public String twentyNineAndThirtyNineRange(){
                 
-            //      logicTest();
 
-        pocketInt = Integer.parseInt(pocketNumber);
+                pocketInt = Integer.parseInt(pocketNumber);
 
-        if ((pocketInt >= 29) && (pocketInt <= 36)){
-            if ((pocketInt % 2 == 0) && (pocketInt > 0)){pocketColor = RED;}
-            else if ((pocketInt > 0) && (pocketInt%2!=0)){
-                pocketColor = BLACK;
-            }
-            else {
-                pocketColor = GREEN;
-            }
+                if ((pocketInt >= 29) && (pocketInt <= 36)){
+
+                    if ((isEven(pocketInt)) && (pocketInt > 0)){
+                        pocketColor = RED;
+                    }
+                    else if ((pocketInt > 0) && (isOdd(pocketInt))){
+                        pocketColor = BLACK;
+                    }
+                    else {
+                        pocketColor = GREEN;
+                    }
+                }
+
+                return pocketColor;
         }
 
-        return pocketColor;
-        }
 
-
+        // main logic
         public String getPocketColor(){
 
         pocketInt = Integer.parseInt(pocketNumber);
@@ -123,31 +132,31 @@ public class RoulettePocket {
 
 
 
- // METHOD TO CHECK FOR EVEN OR ODD NUMBER
-    public boolean isEven(int pocketInt){
+        // METHOD TO CHECK FOR EVEN OR ODD NUMBER
+            public boolean isEven(int pocketInt){
 
-        if ((pocketInt % 2) == 0){
-            return true;
-        }
-        return false;
-    }
+                if ((pocketInt % 2) == 0){
+                    return true;
+                }
+                return false;
+            }
 
-    // METHOD TO CHECK FOR EVEN OR ODD NUMBER
-    public boolean isOdd(int pocketInt){
-        
-        if(pocketInt % 2 != 0)
-            return true;
+            // METHOD TO CHECK FOR EVEN OR ODD NUMBER
+            public boolean isOdd(int pocketInt){
+                
+                if(pocketInt % 2 != 0)
+                    return true;
 
-        return false;
+                return false;
 
-    }
+            }
            
 
 
- // constants
-    static final String BLACK = "black"; 
-    static final String GREEN = "green"; 
-    static final String RED = "red"; 
+            // constants
+                static final String BLACK = "black"; 
+                static final String GREEN = "green"; 
+                static final String RED = "red"; 
 
 
 

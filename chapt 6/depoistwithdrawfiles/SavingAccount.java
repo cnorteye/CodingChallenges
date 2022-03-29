@@ -2,7 +2,6 @@ package depoistwithdrawfiles;
 
 public class SavingAccount {
     // fields
-
     private double interestRate; 
     private double balance; 
 
@@ -18,7 +17,7 @@ public class SavingAccount {
 
     // the monthly interest rate is the annual interest rate divided by 12
     public void setMonthlyInterestRate(double annualRate){
-        interestRate = annualRate/12;
+        interestRate = annualRate/12/100;
     }
 
     // method to add interest rate to the balance
@@ -37,7 +36,7 @@ public class SavingAccount {
         return balance-=w; 
     }
 
-   
+
 
 }
 

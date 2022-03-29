@@ -14,7 +14,7 @@ public class runSavingAccount {
     */
 
     public static void main(String[] args) {
-        // Decimal Format
+        // Decimal Format: helps to format the decimal numbers
         DecimalFormat dollar = new DecimalFormat("$###,###,###,##0.00");
 
         // variables
@@ -41,6 +41,8 @@ public class runSavingAccount {
         
         s.setMonthlyInterestRate(annualRate);           // calculating the monthly interest rate
         
+
+        // loop to get the user's input for each month
         for(int i = 1; i <= months; i++){
     
             // deposit
@@ -72,6 +74,7 @@ public class runSavingAccount {
         }
         
       
+        // receipt
         System.out.println("----------------------------------------\n");
         System.out.println("Ending balance: " + dollar.format(s.getBalance()));
         System.out.println("Total amount of deposits: " + dollar.format(totalDeposit));

@@ -12,11 +12,11 @@ public class runTemp {
     public static void main(String[] args) {
 
         // Getting user input 
+            Scanner sc = new Scanner(System.in); 
+            System.out.println("Enter a number to represent the tempreture in fahreneit: ");
+            double userRes = sc.nextDouble(); 
 
-        Scanner sc = new Scanner(System.in); 
-        System.out.println("Enter a number to represent the tempreture in fahreneit: ");
-        double userRes = sc.nextDouble(); 
-
+            // object
             tempInFahrenheit tempreature = new tempInFahrenheit(userRes); 
             
 
