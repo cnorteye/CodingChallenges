@@ -1,0 +1,55 @@
+//1. 
+public class Poodle extends Dog{ }; 
+
+//2. 
+public class Tiger
+
+//3. 
+public class B {
+    private int m; 
+    protected int n; 
+
+    public void setM(int m){ this.m = m; }; 
+    public int getM(){ return m};
+    public int getN(){return n}; 
+
+    public abstract void calc(); 
+}
+
+public class D extends B{
+    private double q; 
+    public double r; 
+    public void setQ( double q){ this.q = q}; 
+    public double getQ(){return q};
+    public double getR(){return r};
+
+    @override
+    public int calc(){
+        int value; 
+        value = q * r; 
+        return value; 
+    }
+}
+
+//4. 
+super(x, y, z); 
+
+//5
+super.setValue(10); 
+
+//6
+public int getValue(){
+    return value;
+}
+
+//7. 
+public class Stereo extends SoundSystem implements CDPlayable, TurnerPlayable, CassettePlayable{}; 
+
+//8 . 
+public interface Nameable{
+    public void setName(string n); 
+    public String getName(); 
+}
+
+//9. 
+Computable half = x -> x/2; 
